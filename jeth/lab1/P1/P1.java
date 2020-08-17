@@ -13,13 +13,13 @@ public class P1{
                 System.out.println("Action movie fan");
                 break;
 
-            case 'b':
-            case 'B':
+            case 'c':
+            case 'C':
                 System.out.println("Comedy movie fan");
                 break;
 
-            case 'c':
-            case 'C':
+            case 'd':
+            case 'D':
                 System.out.println("Drama movie fan");
                 break;
 

@@ -3,7 +3,8 @@ import java.util.*;
 class Converter{
     static final double US_EXCHANGERATE = 1.82;
     public void convertUS(double sgd){
-       System.out.println(US_EXCHANGERATE * sgd);
+        System.out.printf("%-10.2f%10.2f\n", sgd, US_EXCHANGERATE * sgd);
+       //System.out.println(US_EXCHANGERATE * sgd);
     }
 }
 
@@ -30,11 +31,17 @@ public class P3{
         Converter usd = new Converter();
 
         //first table - for loop
+
+        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("%s\n", "--------------------");
+
         for(int i = start; i <= end; i += increment){
            usd.convertUS(i);
         }
 
         //second table - while loop
+        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("%s\n", "--------------------");
         int j = start;
         while(j <= end){
             usd.convertUS(j);
@@ -42,6 +49,8 @@ public class P3{
         }
 
         //third table - do-while loop
+        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("%s\n", "--------------------");
         j = start;
         do{
             usd.convertUS(j);
