@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class P2 {
     public static void main(String[] args) {
         String a = new String();
-        Scanner salary = new Scanner(System.in);
-        Scanner merit = new Scanner(System.in);
-        System.out.println("salary: $");
-        int userSalary = salary.nextInt();
-        System.out.println("merit: ");
-        int userMerit = merit.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("salary: $");
+        int userSalary = sc.nextInt();
+        System.out.printf("merit: ");
+        int userMerit = sc.nextInt();
         if (userSalary < 600 && userSalary > 499){
             a = "Grade C";
         }
@@ -27,8 +26,7 @@ public class P2 {
         else if (userSalary > 799)
             a = "Grade A";
     System.out.println(a);
-    salary.close();
-    merit.close();
+    sc.close();
     }
 
 }
