@@ -32,7 +32,7 @@ public class P3{
 
         //first table - for loop
 
-        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("\n%-10s%10s\n", "$US", "$S");
         System.out.printf("%s\n", "--------------------");
 
         for(int i = start; i <= end; i += increment){
@@ -40,7 +40,7 @@ public class P3{
         }
 
         //second table - while loop
-        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("\n%-10s%10s\n", "$US", "$S");
         System.out.printf("%s\n", "--------------------");
         int j = start;
         while(j <= end){
@@ -49,7 +49,7 @@ public class P3{
         }
 
         //third table - do-while loop
-        System.out.printf("%-10s%10s\n", "$US", "$S");
+        System.out.printf("\n%-10s%10s\n", "$US", "$S");
         System.out.printf("%s\n", "--------------------");
         j = start;
         do{

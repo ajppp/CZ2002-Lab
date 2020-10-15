@@ -1,12 +1,12 @@
 import java.util.*;
 import java.math.*;
-public class Lab2 {
+public class Lab2p1 {
  	public static void main(String[] args){
 	int choice;
 	Scanner sc = new Scanner(System.in);
 	do {
 		System.out.println("Perform the following methods:");
-		System.out.println("1: miltiplication test");
+		System.out.println("1: multiplication test");
 		System.out.println("2: quotient using division by subtraction");
 		System.out.println("3: remainder using division by subtraction");
 		System.out.println("4: count the number of digits");
