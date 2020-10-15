@@ -38,7 +38,7 @@ public class Shape2DApp{
                 case 4:
                     System.out.println("Enter the length of the base");
                     double base = in.nextDouble();
-                    System.out.println("Enter the length of the height");
+                    System.out.println("Enter the length of the height:");
                     double height = in.nextDouble();
                     shapes[i] = new Triangle(base, height);
             }

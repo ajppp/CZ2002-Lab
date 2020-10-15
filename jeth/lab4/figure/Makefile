@@ -12,7 +12,13 @@ CLASSES = \
 					Rectangle.java \
 					Circle.java \
 					Triangle.java \
-					Shape2DApp.java 
+					Shape2DApp.java \
+					Cone.java\
+					Cuboid.java \
+					Cylinder.java \
+					Pyramid.java \
+					Sphere.java \
+					Shape3DApp.java
 
 default: classes
 
