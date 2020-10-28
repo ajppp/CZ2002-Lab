@@ -11,6 +11,6 @@ public class Cone implements Shape{
 
    public double findArea(){
        double side = Math.sqrt(base * base + height * height);
-       return Math.PI * base * side;
+       return Math.PI * base * side + new Circle(base/1).findArea();
    }
 }

@@ -8,6 +8,6 @@ public class Cuboid implements Shape{
     }
 
     public double findArea(){
-        return 4 * new Rectangle(length, width).findArea() + new Square(width).findArea();
+        return 4 * new Rectangle(length, width).findArea() + 2 * new Square(width).findArea();
     }
 }
