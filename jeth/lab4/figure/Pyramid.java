@@ -8,6 +8,6 @@ public class Pyramid implements Shape{
     }
 
     public double findArea(){
-        return 4 * new Triangle(base, height).findArea();
+        return 4 * new Triangle(base, height).findArea() + new Square(base).findArea();
     }
 }

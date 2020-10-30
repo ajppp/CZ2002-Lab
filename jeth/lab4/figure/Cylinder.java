@@ -10,6 +10,6 @@ public class Cylinder implements Shape{
     }
 
     public double findArea(){
-        return new Circle(width / 2).findArea() + new Rectangle(length, Math.PI * width).findArea();
+        return 2*(new Circle(width / 2).findArea()) + new Rectangle(length, Math.PI * width).findArea();
     }
 }
