@@ -1,12 +1,16 @@
-public class Sphere extends Circle {
-    
-    public Sphere(int radius) {
-		super(radius);
+public class Sphere implements Shape{
+    private int radius;
+	
+	public Sphere (int radius) {
+		this.radius = radius;
 	}
-    
-    public double surfaceArea(){
-        double area = super.getArea();
-        return area*4;
-    }
+
+	public int getRadius() {
+		return radius;
+	}
+	
+	public double getArea() {
+		return Math.PI*radius*radius*4;
+    }   
     
 }

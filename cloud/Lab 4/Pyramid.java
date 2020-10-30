@@ -1,12 +1,23 @@
-public class Pyramid extends Triangle{
-    public Pyramid(int height, int base) {
-		super(height, base);
+public class Pyramid implements Shape {
+    private int height;
+    private int base;
+
+    public Pyramid (int height, int base) {
+      this.height = height;
+      this.base = base;
     }
-    
-    public double surfaceArea() {
+
+    public int getHeight() {
+      return height;
+    }
+
+    public int getBase() {
+     return base;
+    }
+    public double getArea() {
         // I included the base area for the pyramid 
-        double baseArea = Math.pow(super.getBase(), 2);
-        return baseArea + 4*super.getArea();  
+        double baseArea = Math.pow(base, 2);
+        return baseArea + base*Math.sqrt(4*height*height + base*base);  
 	}
     
 }
