@@ -31,7 +31,7 @@ public class Shape3DApp {
                     int height = sc.nextInt();
                     System.out.println("Enter base of pyramid: ");
                     int base = sc.nextInt();
-                    shapes[count] = new Rectangle(height, base);
+                    shapes[count] = new Pyramid(height, base);
                     numShapes--;
                     count++;
                     break;

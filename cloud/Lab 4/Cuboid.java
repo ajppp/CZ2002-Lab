@@ -1,10 +1,23 @@
-public class Cuboid extends Rectangle{
+public class Cuboid implements Shape {
+    private int length;
+    private int breadth;
     
-    public Cuboid(int length, int width) {
-        super(length,width);
+    public Cuboid(int length, int breadth) {
+        this.length = length;
+        this.breadth = breadth;
+	}
+	
+	public int getLength() {
+		return length;
     }
     
-    public double surfaceArea() {
-		return (4*super.getArea()) + (2*Math.pow(super.getBreadth(),2));
+    public int getBreadth() {
+		return breadth;
 	}
+	
+	
+	public double getArea() {
+		return (4*breadth*length) + (2*breadth*breadth);
+	}
+    
 }
