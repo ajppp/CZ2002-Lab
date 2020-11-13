@@ -18,7 +18,12 @@ CLASSES = \
 					Cylinder.java \
 					Pyramid.java \
 					Sphere.java \
-					Shape3DApp.java
+					Shape3DApp.java \
+					Numbers.java \
+					SalePerson.java \
+					Sorting.java \
+					Strings.java \
+					WeeklySales.java
 
 default: classes
 
@@ -32,3 +37,6 @@ clean:
 
 3d:
 	java Shape3DApp
+
+sales:
+	java WeeklySales
